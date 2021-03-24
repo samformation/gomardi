@@ -4,8 +4,14 @@ jobs:
     docker:
       - image: alpine:3.7 
     steps:
+      - checkout
       - run:
           name: Premiere etape dans la construction
           command: |
             echo 'Hello a tous'
             echo 'je compile ton code ici !!'
+      - run:
+          name: Deuxieme etape dans la construction
+          command: |
+            ls -al
+            echo 'voila le code recupere !!'
