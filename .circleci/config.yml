@@ -15,3 +15,7 @@ jobs:
           command: |
             ls -al
             echo 'voila le code recupere !!'
+      - run:
+          name: compilation
+          command: |
+            echo 'on part pour la compilation'
